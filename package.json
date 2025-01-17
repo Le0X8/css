@@ -1,0 +1,27 @@
+{
+  "name": "@leoxdev/css",
+  "version": "1.0.0",
+  "description": "One stylesheet to do the job.",
+  "main": "dist/leoxdev.css",
+  "scripts": {
+    "build": "cd dist && sass ../src/main.scss leoxdev.css && cleancss -o leoxdev.min.css leoxdev.css --input-source-map leoxdev.css.map"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Leonard Lesinski",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le0X8/css"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://css.leox.dev/",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "sass": "^1.83.4"
+  }
+}
