@@ -4,7 +4,7 @@
   "description": "One stylesheet to do the job.",
   "main": "dist/leoxdev.css",
   "scripts": {
-    "compile": "mkdir -p dist && cd dist && sass ../src/main.scss leoxdev.css && cleancss -o leoxdev.min.css leoxdev.css --input-source-map leoxdev.css.map"
+    "build": "mkdir -p dist && cd dist && sass ../src/main.scss leoxdev.css && cleancss -o leoxdev.min.css leoxdev.css --input-source-map leoxdev.css.map"
   },
   "files": [
     "dist"
