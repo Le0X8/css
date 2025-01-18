@@ -1,0 +1,50 @@
+:root {
+  --file-name-bg: var(--file-name-bg-light, #0008);
+  --file-name-fg: var(--file-name-fg-light, #fff);
+  --pre-bg: var(--pre-bg-light, #eee);
+  --pre-fg: var(--pre-fg-light, #000);
+
+  @media (prefers-color-scheme: dark) {
+    --file-name-bg: var(--file-name-bg-dark, #0008);
+    --file-name-fg: var(--file-name-fg-dark, #fff);
+    --pre-bg: var(--pre-bg-dark, #111);
+    --pre-fg: var(--pre-fg-dark, #fff);
+  }
+}
+
+main span[data-file] {
+  border-radius: var(--border-radius);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  display: block;
+  width: calc(100% - 1rem - 2px);
+  background-color: var(--file-name-bg);
+  color: var(--file-name-fg);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  transform: translateX(1px) translateY(1px);
+
+  & + pre {
+    padding-top: 2.5rem;
+  }
+}
+
+main pre {
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  width: calc(100% - 1rem - 2px);
+  height: fit-content;
+  overflow-y: auto;
+  background-color: var(--pre-bg);
+  color: var(--pre-fg);
+  border: 1px solid var(--file-name-bg);
+  font-family: var(--font-mono);
+  line-height: 1.25rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  &.shiki {
+    border-color: transparent;
+  }
+}

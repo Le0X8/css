@@ -3,10 +3,14 @@ nav ~ main {
 }
 
 main {
+  position: relative;
   margin: 0 auto;
+  margin-bottom: 3rem;
   width: 50rem;
   text-align: justify;
   hyphens: auto;
+  height: fit-content;
+  min-height: calc(100vh - 10rem);
 
   h1, h2, h3, h4, h5, h6 {
     text-align: left;

@@ -1,4 +1,4 @@
-main a {
+main a, footer p a {
   color: var(--accent);
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -10,5 +10,13 @@ main a {
 
   &:hover {
     text-decoration-color: var(--accent);
+  }
+}
+
+main p > em > a:only-child {
+  font-style: normal;
+
+  &::before {
+    content: '→ ';
   }
 }

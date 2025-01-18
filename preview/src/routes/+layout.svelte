@@ -1,4 +1,6 @@
 <script lang="ts">
+  import '@fontsource-variable/inter';
+  import '@fontsource-variable/fira-code';
   import '../../../src/main.scss';
 
   const { children } = $props();
@@ -48,9 +50,14 @@
   {/each}
 
   <div data-cta>
-    <a href="/" data-primary>Install</a>
+    <a href="/installation" data-primary>Install</a>
     <a href="https://github.com/StandardCSS/StandardCSS">Contribute</a>
   </div>
 </nav>
 
 {@render children()}
+
+<footer>
+  <p>&copy; 2025 <a href="https://lesinski.cc/">Leonard Lesinski</a></p>
+  <p>StandardCSS is licensed under the <a href="https://github.com/StandardCSS/StandardCSS/blob/main/LICENSE">GPL-3.0 license</a>.</p>
+</footer>

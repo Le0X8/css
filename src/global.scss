@@ -2,6 +2,8 @@
   color-scheme: light;
 
   --border-radius: var(--roundness, 0.5rem);
+  --font-sans: var(--preferred-font, 'Inter Variable'), 'Inter', 'Roboto', 'Helvetica', 'SF Pro', 'Verdana', sans-serif;
+  --font-mono: var(--preferred-mono-font, 'Fira Code Variable'), 'Fira Code', 'Cascadia Code', 'Inconsolata', 'Monaco', 'Consolas', monospace;
 
   --fg: var(--fg-light, #000);
   --bg: var(--bg-light, #fff);
@@ -19,7 +21,7 @@
 }
 
 html {
-  font-family: 'Inter Variable', 'Inter', 'Roboto', 'Helvetica', 'SF Pro', 'Verdana', sans-serif;
+  font-family: var(--font-sans);
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   background-color: var(--bg);

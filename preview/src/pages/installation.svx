@@ -1,0 +1,53 @@
+---
+title: Installation
+---
+
+There are two ways to install StandardCSS:
+
+- CDN
+- NPM
+
+While the CDN method is the easiest way to use StandardCSS, you can also install
+StandardCSS via NPM to use it in a more complex project inside SvelteKit or other frameworks.
+
+**Note:** If you install StandardCSS on an existing project, your existing styling may be affected, especially when
+using TailwindCSS or other CSS frameworks. Make sure to test it first before using it in production straight away.
+
+## CDN
+
+To use StandardCSS via a CDN, add the following line to your HTML head:
+
+```svelte
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/stdcss@0/dist/standard.min.css">
+```
+
+## NPM
+
+To install StandardCSS via NPM, run the following command:
+
+```bash
+npm i stdcss
+```
+
+If you're using Yarn or PNPM, just substitute `npm i` with `yarn add` or `pnpm i`.
+
+After installing, import the CSS file:
+
+### Any CSS file
+
+```scss
+@import 'stdcss';
+```
+
+### SvelteKit
+
+<span data-file>src/routes/+layout.svelte</span>
+
+```svelte
+<script lang="ts">
+  import 'stdcss';
+  // ...
+</script>
+
+<!-- ... -->
+```

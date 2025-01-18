@@ -1,1 +1,57 @@
 # StandardCSS
+
+_Vanilla HTML5 tag components_
+
+---
+
+StandardCSS is a CSS library that aims to provide a simple way to style your website
+with support for all HTML5 tags, including navigation, forms, tables, and more.
+
+This is especially useful for:
+- **Beginners** who want to write as little CSS as possible
+- **Developers** who want to focus on the functionality of their website
+- **Bloggers** who want to write content without worrying about styling
+- anyone who wants to have a modern, clean, and responsive website
+
+_[Installation](/installation)_
+
+## Features
+
+- **Responsive**: StandardCSS is designed to be responsive out of the box
+- **Dark mode, print layouts**: cause not supporting these is so oldschool
+- **Modern**: up-to-date with the latest web design trends
+- **Lightweight**: less than 10KB minified and Brotli-compressed (JSDelivr)
+- **Customizable**: you can easily override the default styles
+- **No JavaScript**: even the navbar is pure CSS
+- **Simple structure**: no `div` hell, just pure HTML5 tags
+- **[Dark Reader](https://darkreader.org/) compatible**: so your website also looks good when someone uses the extension
+
+_[More features](/features)_
+
+## Why should I use StandardCSS?
+
+Well, don't you want your HTML file look like this?
+
+```svelte
+<nav>
+  <a href="/">
+    <img src="/logo.svg" alt="Logo" />
+    <h1>My Website</h1>
+  </a>
+
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+</nav>
+<main>
+  <h1>Welcome to my website!</h1>
+</main>
+```
+
+And everything just works out of the box; no need to write a single line of CSS, just include the StandardCSS stylesheet and you're good to go!
+
+## How does it look like?
+
+This website here is already styled with StandardCSS. Everything you see here is plain HTML5 tags with StandardCSS applied (and a SvelteKit backend lol).
+
+_[List of components](/components)_
