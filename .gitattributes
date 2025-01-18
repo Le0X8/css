@@ -2,3 +2,5 @@
 *.svx linguist-detectable
 *.md linguist-language=markdown
 *.md linguist-detectable
+*.html linguist-language=svelte
+*.js linguist-language=typescript
