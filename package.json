@@ -1,10 +1,10 @@
 {
-  "name": "@leoxdev/css",
-  "version": "1.0.0",
+  "name": "standardcss",
+  "version": "0.1.0",
   "description": "One stylesheet to do the job.",
-  "main": "dist/leoxdev.css",
+  "main": "dist/standard.css",
   "scripts": {
-    "build": "mkdir -p dist && cd dist && sass ../src/main.scss leoxdev.css && cleancss -o leoxdev.min.css leoxdev.css --input-source-map leoxdev.css.map"
+    "build": "mkdir -p dist && cd dist && sass ../src/main.scss standard.css && cleancss -o standard.min.css standard.css --input-source-map standard.css.map"
   },
   "files": [
     "dist"
@@ -14,12 +14,12 @@
   "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Le0X8/css"
+    "url": "git+https://github.com/StandardCSS/StandardCSS"
   },
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://css.leox.dev/",
+  "homepage": "https://standardcss.com/",
   "devDependencies": {
     "clean-css-cli": "^5.6.3",
     "sass": "^1.83.4"

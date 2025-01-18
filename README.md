@@ -1,6 +1,4 @@
-# `@leoxdev/css`
-
-One stylesheet to do the job.
+# StandardCSS
 
 This stylesheet aims to provide a simple way to style your website with support for all HTML5 tags, including navigation, forms, tables, and more.
 
