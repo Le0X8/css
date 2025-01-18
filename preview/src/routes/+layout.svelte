@@ -4,9 +4,10 @@
   const { children } = $props();
 </script>
 
-<style>
+<style lang="scss">
   :root {
-    --accent: #0284c7;
+    --nav-bg-light: #fff8;
+    --nav-bg-dark: #0008;
   }
 </style>
 

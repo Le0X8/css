@@ -1,12 +1,29 @@
 :root {
-  --fg: var(--text-light, #000);
+  color-scheme: light;
+
+  --border-radius: var(--roundness, 0.5rem);
+
+  --fg: var(--fg-light, #000);
   --bg: var(--bg-light, #fff);
+  --accent: var(--accent-light, #088);
+  --border: var(--border-light, #ccc);
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+
+    --fg: var(--fg-dark, #fff);
+    --bg: var(--bg-dark, #000);
+    --accent: var(--accent-dark, #088);
+    --border: var(--border-dark, #444);
+  }
 }
 
 html {
   font-family: 'Inter Variable', 'Inter', 'Roboto', 'Helvetica', 'SF Pro', 'Verdana', sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 body {
@@ -17,18 +34,4 @@ body {
   width: 100%;
   font-size: 1rem;
   line-height: 1.5rem;
-
-  background-color: #fff;
-  color: #000;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #000;
-    color: #fff;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
 }
